@@ -1,0 +1,40 @@
+:root{
+  --bg:#071021;
+  --fg:#cfe8ff;
+  --accent:#69e0ff;
+}
+html,body{
+  height:100%;
+  margin:0;
+  font-family:system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial;
+  background:linear-gradient(180deg,var(--bg),#021018);
+  color:var(--fg);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+#ui{
+  position:fixed;
+  top:12px;
+  left:12px;
+  z-index:10;
+  user-select:none;
+}
+#score{
+  font-weight:600;
+  margin-bottom:6px;
+}
+#instructions{
+  font-size:13px;
+  opacity:0.85;
+}
+canvas{
+  width:820px;
+  height:600px;
+  max-width:95vw;
+  max-height:80vh;
+  background:transparent;
+  border:2px solid rgba(255,255,255,0.04);
+  box-shadow:0 8px 40px rgba(0,0,0,0.6);
+  border-radius:6px;
+}
